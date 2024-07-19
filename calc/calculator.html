@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        input[type= "text"]{
+            width: 200px;
+            height: 30px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        input[type="submit"]{
+            width: 250px;
+            height: 50px;
+            margin: 20px 100px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="calculator.php">
+        <input type="text" name="input1" placeholder="Input first number">
+        <select name="dropdown">
+            <option value="Addition">Add</option>
+            <option value="Subtraction">Subtract</option>
+            <option value="Multiplication">Multiply</option>
+            <option value="Division">Divide</option>
+            <option value="Modulos">Mod</option>
+            <option value="Square">Sqrt</option>
+        </select>
+        <input type="text" name="input2" placeholder="Input second number"><br>
+        <input type="submit" name="submit">
+    </form>
+</body>
